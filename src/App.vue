@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import { Button } from "sl-vue-template";
 import HelloWorld from "./components/HelloWorld.vue";
+import AboutButton from "./pages/AboutButton";
 const onClick = () => {
   console.log("--->", 11);
 };
@@ -19,6 +20,7 @@ const onClick = () => {
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      <AboutButton />
       <Button mode="primary" :onClick="onClick">Test</Button>
 
       <nav>
